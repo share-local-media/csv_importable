@@ -6,6 +6,7 @@ module CSVImportable
     def initialize(args = {})
       @row = args[:row]
       @headers = args[:headers]
+      @import = args[:import]
       after_init(args)
     end
 

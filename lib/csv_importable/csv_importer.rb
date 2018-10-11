@@ -96,7 +96,7 @@ module CSVImportable
       end
 
       def process_row(row, headers)
-        row_importer_class.new(row: row, headers: headers).import_row if row_importer_class
+        row_importer_class.new(row: row, headers: headers, import: import_obj).import_row if row_importer_class
       end
 
       def starting_message
